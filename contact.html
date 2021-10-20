@@ -1,205 +1,108 @@
+<!doctype html>
 <html>
 <head>
-    <title>danfiumara.com</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .container{
-            width: 100%;
-            height: 105%;
-            background: #1b272b;
-        }
-        .menu ul{
-            display: inline-flex;
-            margin: 50px;
-            text-decoration: none;
-        }
-        .menu ul li{
-            list-style: none;
-            margin: 0 20px;
-            color: #d8effd;
-            cursor: pointer;
-        }
-        .menu h1{
-            color: #d8effd;
-            text-align: center;
-        }
-        .active{
-            color: #57b8f5 !important;
-        }
-        button {
-            background-color: #d8effd;
-            border: none;
-            color: black;
-            text-align: center;
-            text-decoration: none;
-            font-size: inherit;
-            font-weight: inherit;
-            cursor: pointer;
-        }
-        .banner1{
-            background-color: #d8effd;
-            text-align: center;
-            margin-top: 50px;
-            margin-left: 50px;
-            margin-right: 50px;
-            padding: 40px;
-        }
-        .banner1 p{
-            padding: 20px;
-            list-style: none;
-        }
-        .banner1 h1{
-            padding: 20px;
-        }
-        .footer{
-            color:#d8effd;
-            margin-top: 350px;
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: small;
-            background-color: #1b272b;
-        }
-        .L{
-            margin-bottom: 10px;
-        }
-        a.danLink:link{
-            text-decoration: none;
-            
-        }
-        a.danLink:visited{
-            text-decoration: none;
-            color: #d8effd;
-        }
-        .otherLink{
-            color: black;
-            text-decoration:none;
-        }
-        a.otherLink:visited{
-            color:black;
-        }
-        .extLink{
-            padding: 8px;
-            background-color: #d8effd;
-            border:#d8effd;
-            margin-left: 1300px;
-            float: right;
-            text-decoration: none;
-            color: black;
-        }
-        a.extLink:visited{
-            color:black;
-        }
-        a.extLink:hover{
-            background-color:#b6e3ff;
-        }
-        .tooltip {
-        position: relative;
-        display: inline-block;
-        }
-
-        .tooltip .tooltiptext {
-        visibility: hidden;
-        font-size:medium;
-        width: 140px;
-        background-color: #1b272b;
-        color: #d8effd;
-        text-align: center;
-        border-radius: 6px;
-        padding: 0px;
-        position: absolute;
-        z-index: 1;
-        bottom: 75%;
-        left: 50%;
-        margin-left: -75px;
-        opacity: 0;
-        transition: opacity 0.5s;
-        }
-
-        .tooltip .tooltiptext::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: #555 transparent transparent transparent;
-        }
-
-        .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-        }
-        .silent{
-            visibility: invisible;
-            padding: 0px;
-            margin: 0px;
-            margin-top: 0px;
-            font-size: xx-small;
-            color: #d8effd;
-            background-color:#d8effd;
-        }
-        
-    </style>
+<link href="https://fonts.googleapis.com/css?family=Noto Sans Mono|Arvo|Podkova" rel="stylesheet">
+<meta charset="utf-8">
+<title>danfiumara.com</title>
+	<style>
+		body{	
+			padding: 0%;
+			margin: 0%;
+			height: 100%;
+			background-image: url('bg.png');
+			background-color: #5C0087;
+			font-family: 'Noto Sans Mono';
+			font-weight: 500;
+		}
+		.navbar{
+			padding: 0;
+			margin: 0;			
+			list-style-type: none;
+			background-color: black;
+			margin-top: 1%;
+			margin-left: 2%;
+		}
+		li{
+			margin-right: 5%;
+			font-size: 45px;
+			float: left;
+			color: #FFFFB1;
+		}
+		li a{
+			display: inline;
+			text-decoration: none;
+			color: #FFFFB1;
+			text-align: center;
+			padding: 14px 16px;
+		}
+		li:hover{
+			background-color: #38064f;
+		}
+		.box{
+			border-style: solid;
+			border-color: #FFFFB1;
+			border-size: 5px;
+			float:right;
+		}
+		.box:hover{
+			background-color: #38064f;
+		}
+		.main{
+			padding: 8%;
+			padding-left: 2%;
+			padding-right: 45%;
+			font-size: 40px;
+			width: 50%;
+			border-style: solid;
+		}
+		.main:after{
+			content: "";
+			display: inline;
+			clear: both;
+		}
+		.content{
+			margin: 2%;
+			padding: 2%;
+			border-style: solid;
+			border-color: #FFFFB1;
+			color: #FFFFB1;
+			font-size: 40px;
+			
+		}
+		.Button{
+			padding: .3%;
+			text-align: center;
+			border-style: solid;
+			border-color: #FFFFB1;
+			text-decoration: none;
+			color: #FFFFB1;
+		}
+		.Button a{
+			text-decoration: none;
+			color: #FFFFB1;
+		}
+		.Button:hover{
+			background-color: #38064f;
+		}
+		.method{
+			font-family: "Noto Sans Mono";
+			font-size: 40px;
+			font-weight: 500;
+			color: #FFFFB1;
+			text-align: center;
+			padding: 10%;
+			padding-bottom: .05%;
+		}
+	</style>
 </head>
-<script>
-    function myFunction() {
-        const copyToClipboard = str => {
-            const el = document.createElement('textarea');
-            el.value = "technodan143#5185";
-            document.body.appendChild(el);
-            el.select();
-            el.setSelectRange(0,99999);
-            document.execCommand("copy");
-            document.body.removeChild(el);
-        };
-        var tooltip = document.getElementById("myTooltip");
-        tooltip.innerHTML = "Copied!";
-    }
-function outFunc() {
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copy to Clipboard";
-}
-</script>
 <body>
-    <div class="container">
-        <div class="menu">
-            <ul>
-                <li><a href="/" class="danLink">Home</li>
-                <li class="active"><a href="/about" class="danLink">About</a></li>
-                <li><a href="/resume" class="danLink">Resume</a></li>
-                <li><a href="/contact" class="danLink">Contact</a></li>
-                <li><a href="https://github.com/fiumad/" class="extLink">GitHub</a></li>
-            </ul>
-            <h1>Get in touch.</h1>
-        </div>
-        <div class="banner1">
-            <ul>
-                <h1>{315-413-9696}</h1>
-                <h1><a class="otherLink" href="mailto: dancarlfiumara@gmail.com">{dancarlfiumara@gmail.com}</a></h1>
-                <div class="tooltip">
-                    <h1>
-                        <button class="otherLink" onclick="myFunction()" onmouseout="outFunc()">
-                            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-                            {Discord}
-                            
-                        </button>
-                    </h1>
-                </div>
-            </ul>
-            
-            
-        </div>
-            
-        <div class="footer">
-            <p class="L">Dan Fiumara - 2021</p>
-            <p class="R">dancarlfiumara@gmail.com</p>
-            
-        </div>
-    
-    </div>
-    
+	<ul class="navbar">
+		<li><a href="/">Home</a></li>
+		<li><a href="/projects">Projects</a></li>
+		<li><a href="/contact">Contact</a></li>
+		<li class="box"><a href="https://github.com/fiumad">GitHub</a></li>
+	</ul>
+		<h1 class="method"><a class="Button" href="mailto: fiumad@rpi.edu">fiumad@rpi.edu</a></h1>
+		<h1 class="method"><a class="Button">+1 315-413-9696</a></h1>
 </body>
+</html>

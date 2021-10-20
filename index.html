@@ -1,176 +1,105 @@
+<!doctype html>
 <html>
 <head>
-    <title>danfiumara.com</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .container{
-            width: 100%;
-            height: 155%;
-            background: #1b272b;
-        }
-        .menu ul{
-            display: inline-flex;
-            margin: 50px;
-        }
-        .menu ul li{
-            list-style: none;
-            text-decoration: none;
-            margin: 0 20px;
-            color: #d8effd;
-            cursor: pointer;
-        }
-        .menu h1{
-            color: #d8effd;
-            text-align: center;
-        }
-        .active{
-            color: none;
-        }
-        .banner1{
-            background-color: #d8effd;
-            text-align: center;
-            margin-top: 50px;
-            margin-left: 50px;
-            margin-right:150px;
-            padding: 40px;
-        }
-        .banner1 ul{
-            padding: 20px;
-            list-style: none;
-        }
-        .banner2{
-            background-color: #d8effd;
-            text-align: center;
-            margin-top: 50px;
-            margin-left: 150px;
-            margin-right:50px;
-            padding: 30px;
-        }
-        .banner2 u2{
-            padding: 20px;
-            list-style: none;
-        }
-        .banner3{
-            background-color: #d8effd;
-            text-align: center;
-            margin-top: 50px;
-            margin-left: 50px;
-            margin-right:150px;
-            padding: 25px;
-        }
-        .banner3 u3{
-            padding: 20px;
-            list-style: none;
-        }
-        .banner4{
-            background-color: #d8effd;
-            text-align: center;
-            margin-top: 50px;
-            margin-left: 150px;
-            margin-right:50px;
-            padding: 45px;
-        }
-        .banner4 u4{
-            padding: 20px;
-            list-style: none;
-        }
-        .footer{
-            color:#d8effd;
-            margin-top: 140px;
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: small;
-            background-color: #1b272b;
-        }
-        .L{
-            margin-bottom: 10px;
-        }
-        .danLink{
-            text-decoration: none;
-            
-        }
-        a.danLink:visited{
-            text-decoration: none;
-            color: #d8effd;
-        }
-        .otherLink{
-            text-decoration:none;
-        }
-        a.otherLink:visited{
-            color:black;
-        }
-        .extLink{
-            padding: 8px;
-            background-color: #d8effd;
-            border:#d8effd;
-            margin-left: 1300px;
-            float: right;
-            text-decoration: none;
-            color: black;
-        }
-        a.extLink:visited{
-            color:black;
-        }
-        a.extLink:hover{
-            background-color:#b6e3ff;
-        }
-    </style>
+<link href="https://fonts.googleapis.com/css?family=Noto Sans Mono|Arvo|Podkova" rel="stylesheet">
+<meta charset="utf-8">
+<title>danfiumara.com</title>
+	<style>
+		body{	
+			padding: 0%;
+			margin: 0%;
+			height: 100%;
+			background-image: url('bg.png');
+			background-color: #5C0087;
+			font-family: 'Noto Sans Mono';
+		}
+		.navbar{
+			padding: 0;
+			margin: 0;			
+			list-style-type: none;
+			background-color: black;
+			margin-top: 1%;
+			margin-left: 2%;
+		}
+		li{
+			margin-right: 5%;
+			font-size: 45px;
+			float: left;
+			color: #FFFFB1;
+		}
+		li a{
+			display: inline;
+			text-decoration: none;
+			color: #FFFFB1;
+			text-align: center;
+			padding: 14px 16px;
+		}
+		li:hover{
+			background-color: #38064f;
+		}
+		.box{
+			border-style: solid;
+			border-color: #FFFFB1;
+			border-size: 5px;
+			float:right;
+		}
+		.box:hover{
+			background-color: #38064f;
+		}
+		.main{
+			padding: 8%;
+			padding-left: 2%;
+			padding-right: 45%;
+			font-size: 40px;
+			width: 50%;
+			border-style: solid;
+		}
+		.main:after{
+			content: "";
+			display: inline;
+			clear: both;
+		}
+		.content{
+			margin: 5%;
+			margin-left: 2%;
+			float: left;
+			padding: 1%;
+			width: 50%;
+			border-style: solid;
+			border-color: #FFFFB1;
+			color: #FFFFB1;
+			font-size: 40px;
+			
+		}
+		.resButton{
+			margin-left:78%;
+			padding: .1%;
+			text-align: center;
+			border-style: solid;
+			border-color: #FFFFB1;
+		}
+		.resButton a{
+			text-decoration: none;
+			color: #FFFFB1;
+		}
+		.resButton:hover{
+			background-color: #38064f;
+		}
+	</style>
 </head>
 <body>
-    <div class="container">
-        <div class="menu">
-            <ul>
-                <li class="active"><a href="/" class="danLink">Home</li>
-                <li><a href="/about" class="danLink">About</a></li>
-                <li><a href="/resume" class="danLink">Resume</a></li>
-                <li><a href="/contact" class="danLink">Contact</a></li>
-                <li><a href="https://github.com/fiumad/" class="extLink">GitHub</a></li>
-            </ul>
-            <h1>Welcome.</h1>
-        </div>
-        <div class="banner1">
-            <h1>{Education}</h1>
-            <ul>
-                <li>~Rensselaer Polytechnic Institute.</li>
-                <li>~B.S. Computer Engineering & Computer Science.</li>                
-                <li>~Class of 2024.</li>
-            </ul>
-        </div>
-        <div class="banner2">
-            <h1>{Languages}</h1>
-            <u2>
-                <li>~JavaScript.</li>
-                <li>~C++.</li>
-                <li>~Python.</li>
-                <li>~HTML/CSS.</li>
-                <li>~FPGA(VHDL).</li>
-            </u2>
-        </div>
-        <div class="banner3">
-            <h1>{Software/OS}</h1>
-            <u3>
-                <li>~Linux.</li>
-                <li>~Git.</li>
-                <li>~VSCode.</li>
-                <li>~Vim.</li>
-                <li>~Adobe Products.</li>
-            </u3>
-        </div>
-        <div class="banner4">
-            <h1>{Projects}</h1>
-            <u4>
-                <li>~Full Stack Website.</li>
-                <li>~Discord Role Management Bot.</li>                
-                <li>~Placeholder.</li>
-            </u4>
-        </div>
-        <div class="footer">
-            <p class="L">Dan Fiumara - 2021</p>
-            <p class="R">dancarlfiumara@gmail.com</p>
-        </div>
-
-    </div>
+	<ul class="navbar">
+		<li><a href="/">Home</a></li>
+		<li><a href="/projects">Projects</a></li>
+		<li><a href="/contact">Contact</a></li>
+		<li class="box"><a href="https://github.com/fiumad">GitHub</a></li>
+	</ul>
+	
+		<div class="content">
+			<p>Welcome.<br><br>I'm Dan Fiumara, a Sophomore at Rensselaer Polytechnic Institute in Troy, NY. I'm currently seeking an internship or co-op so that I can continue to develop my skills.
+			</p>
+			<p class="resButton"><a href="resume.pdf">Resume</a></p>
+		</div>
+		<img src="DanFsmall.jpg" alt="Dan" style="width:25.2%; margin:4.5%;">	
 </body>
+</html>
